@@ -23,7 +23,7 @@ public class NewsApiClient {
         String validSearchTerm = validateSearchTerm(searchTerm);
 
         try{
-            String searchUrl = baseUrl + "?busca=" + validSearchTerm + "&qtd=5";
+            String searchUrl = baseUrl + "?busca=" + validSearchTerm + "&qtd=3";
             String jsonResponse = makeRequest(searchUrl);
 
             return newsParser.parseNewsList(jsonResponse);
@@ -37,7 +37,7 @@ public class NewsApiClient {
         String validDateFormat = validDateFormat(date);
 
         try {
-            String searchUrl = baseUrl + "?de=" + validDateFormat + "&qtd=5";
+            String searchUrl = baseUrl + "?ate=" + validDateFormat + "&qtd=3";
             String jsonResponse = makeRequest(searchUrl);
 
             return newsParser.parseNewsList(jsonResponse);
