@@ -389,7 +389,7 @@ public class NewsAppGUI {
         addToListPanel.setBorder(BorderFactory.createTitledBorder("Adicionar Notícia à Lista"));
 
         JPanel newsIdPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
-        JLabel newsIdLabel = new JLabel("ID da Série:");
+        JLabel newsIdLabel = new JLabel("ID da Notícia:");
         JTextField newsIdField = new JTextField(5);
 
         newsIdPanel.add(newsIdLabel);
@@ -440,7 +440,7 @@ public class NewsAppGUI {
         removeToListPanel.setBorder(BorderFactory.createTitledBorder("Remover Notícia da Lista"));
 
         JPanel newsIdPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
-        JLabel newsIdLabel = new JLabel("ID da Série:");
+        JLabel newsIdLabel = new JLabel("ID da Noticía:");
         JTextField newsIdField = new JTextField(5);
 
         newsIdPanel.add(newsIdLabel);
@@ -675,7 +675,7 @@ public class NewsAppGUI {
             noResultsLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
             newsContainer.add(noResultsLabel);
         } else {
-            JLabel headerLabel = new JLabel("Séries encontradas para \"" + searchTerm + "\":");
+            JLabel headerLabel = new JLabel("Notícias encontradas para \"" + searchTerm + "\":");
             headerLabel.setFont(new Font("Arial", Font.BOLD, 14));
             headerLabel.setAlignmentX(Component.RIGHT_ALIGNMENT);
             newsContainer.add(headerLabel);
